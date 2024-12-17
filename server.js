@@ -10,6 +10,6 @@ cloudinary.v2.config({
 app.get("/", (req, res) => {
   res.status(200).json("welcome to deploy")
 })
-app.listen(process.env.PORT, ""0.0.0.0"", () => {
+app.listen(process.env.PORT, () => {
   console.log(`Server listening at port ${process.env.PORT}`);
 });
