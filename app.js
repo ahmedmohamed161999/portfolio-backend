@@ -46,7 +46,9 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-
+app.get("/", req, res => {
+  res.send("Hello");
+});
 
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/timeline", timelineRouter);
